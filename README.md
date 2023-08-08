@@ -25,6 +25,12 @@ Project from the second Web3 Week (07-aug-23): [Luiz Tools](https://www.luiztool
 Our CrypTwitter.sol smart contract.
 
 
+## Proposed challenges
+
+- [X] Have a mapping and allow the definition of the user's photo (URL of an image);
+- [X] The pagination is dynamic, defined by the contract administrator;
+- [ ] function to return only tweets from a specific user;
+
 
 ## 📄 License
 
