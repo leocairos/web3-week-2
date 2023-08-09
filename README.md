@@ -44,8 +44,8 @@ This will be able your contract to test by BSC Scan Web Interface:
 
 ## Folders in this repository
 
-* smart-contract: Our CrypTwitter.sol smart contract.
-
+* [**smart-contract**](./smart-contract/): Our CrypTwitter.sol smart contract.
+* [**dapp**](./dapp/): Our CrypTwitter web3 frontend.
 
 ## Proposed challenges
 
