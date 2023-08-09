@@ -5,24 +5,46 @@ Learn in one week how to program blockchain applications from scratch and become
 Project from the second Web3 Week (07-aug-23): [Luiz Tools](https://www.luiztools.com.br/ "Luiz Tools")
 
 <p align="center">
-    <img width="50%" alt="Project Architecture" title="Project Architecture" src="./.gitAssets/projectDiagram.png" />
+    <img width="70%" alt="Project Architecture" title="Project Architecture" src="./.gitAssets/projectDiagram.png" />
     <br><span>Project Architecture</span>
 </p>
 
 <p align="center">
-    <img width="50%" alt="Initial Page" title="Initial Web Page" src="./.gitAssets/initialPage.png" />
+    <img width="70%" alt="Initial Page" title="Initial Web Page" src="./.gitAssets/initialPage.png" />
     <br><span>Initial Home Page</span>
 </p>
 
 <p align="center">
-    <img width="50%" alt="Tweets Page" title="Tweets Web Page" src="./.gitAssets/tweetsPage.png" />
+    <img width="70%" alt="Tweets Page" title="Tweets Web Page" src="./.gitAssets/tweetsPage.png" />
     <br><span>Tweets Page</span>
 </p>
 
+Contract published on [TestNet BSC](https://testnet.bscscan.com/address/0x017bB2E08ddCf2092B94b9F2C5395911f6C43729)
+
+## Manage Wallet (Metamask)
+
+* Add Metamask to Browser
+* Configure TestNet BSC to Wallet
+  * https://testnet.bscscan.com/
+  * Click "Add BSC Network" button in the page footer
+* Add coins to Wallet (by faucet)
+  * https://testnet.bnbchain.org/faucet-smart
+
+## Verify & Publish Contract Source Code
+
+On BSC Scan Page, select contract and "Verify & Publish".
+
+This will be able your contract to test by BSC Scan Web Interface:
+
+<p align="center">
+    <img width="70%" alt="Tweets Page" title="BSC Scan Test Contract" src="./.gitAssets/BSCScan_TestContract.png" />
+    <br><span>BSC Scan Test Contract</span>
+</p>
+
+
 ## Folders in this repository
 
-### smart-contract
-Our CrypTwitter.sol smart contract.
+* smart-contract: Our CrypTwitter.sol smart contract.
 
 
 ## Proposed challenges
