@@ -2,11 +2,18 @@
 
 import Head from "next/head";
 import { doLogin } from "@/services/Web3Service";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
 
   const [message, setMessage] = useState("");
+
+  const [wallet, setWallet] = useState("");
+
+  useEffect(() => {
+    setWallet(localStorage.getItem('wallet'));
+    setMessage(wallet);
+  }, [])
 
   function btnLoginClick() {
     setMessage("Connecting with MetaMask...please wait...");
@@ -34,7 +41,12 @@ export default function Home() {
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <button type="button" className="btn btn-primary btn-lg px-4 me-md-2" onClick={btnLoginClick}>
                 <img src="/metamask.svg" width="64" className="me-3" />
-                Connect with MetaMask
+                {
+                  wallet && wallet.length > 1
+                    ? <>Connected</>
+                    : <>Connect with MetaMask </>
+                }
+
               </button>
             </div>
             <p className="message">{message}</p>
