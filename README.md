@@ -53,7 +53,7 @@ This will be able your contract to test by BSC Scan Web Interface:
 **Class 1**
 - [X] Have a mapping and allow the definition of the user's photo (URL of an image);
 - [X] The pagination is dynamic, defined by the contract administrator;
-- [ ] function to return only tweets from a specific user;
+- [ ] Function to return only tweets from a specific user;
 
 **Class 2**
 - [X] Deploy on another blockchain (suggestions: Avalanche, Polygon or Goerli);

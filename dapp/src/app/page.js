@@ -3,29 +3,33 @@
 import Head from "next/head";
 import { doLogin } from "@/services/Web3Service";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
 
+  const { push } = useRouter();
   const [message, setMessage] = useState("");
-
   const [wallet, setWallet] = useState("");
 
   useEffect(() => {
     setWallet(localStorage.getItem('wallet'));
-    setMessage(wallet);
+    setMessage(localStorage.getItem('wallet'));
   }, [])
 
   function btnLoginClick() {
     setMessage("Connecting with MetaMask...please wait...");
     doLogin()
-      .then(wallet => setMessage(wallet))
-      .catch(err => setMessage(err))
+      .then(wallet => push("/timeline"))
+      .catch(err => {
+        console.error(err);
+        setMessage(err.message);
+      })
   }
 
   return (
     <>
       <Head>
-        <title>CrypTwitter | Login</title>
+        <title>CrypTwitter</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
