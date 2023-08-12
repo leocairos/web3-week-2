@@ -20,7 +20,10 @@ Project from the second Web3 Week (07-aug-23): [Luiz Tools](https://www.luiztool
 </p>
 
 Contract published on [TestNet BSC](https://testnet.bscscan.com/address/0x017bB2E08ddCf2092B94b9F2C5395911f6C43729)
+
 Contract published also on [Goerli Testnet](https://goerli.etherscan.io/address/0x732091390aF71AC311144171056B556213b2E0d8#readContract)
+
+DAPP published on [Vercel](https://web3-week-2.vercel.app/)
 
 ## Manage Wallet (Metamask)
 
